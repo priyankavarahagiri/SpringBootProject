@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload File</title>
+</head>
+<body>
+    <h2>Upload File</h2>
+    <form method="post" action="/admin/upload" enctype="multipart/form-data">
+        <label for="file">Choose a file:</label>
+        <input type="file" id="file" name="file" accept=".csv"><br><br>
+        
+        <label for="description">Description:</label>
+        <input type="text" id="description" name="description" placeholder="Description"><br><br>
+        
+        <button type="submit">Upload</button>
+        
+        
+        <h2>Search Trains</h2>
+    <form action="/search" method="GET">
+        <label for="source">Source:</label>
+        <input type="text" id="source" name="source" required>
+        <br><br>
+        <label for="destination">Destination:</label>
+        <input type="text" id="destination" name="destination" required>
+        <br><br>
+        <button type="submit">Search</button>
+        
+    </form>
+</body>
+</html>
